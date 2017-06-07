@@ -1,37 +1,26 @@
-## Welcome to GitHub Pages
+# Welcome to LoRaWeather!
+LoRaWeather is a project that is created as a graduation assignment. The assignment:
+</br></br>_"Create an open source weather station that sends data over the LoRa network to The Things Network."_</br>
 
-You can use the [editor on GitHub](https://github.com/LoRaWeather/loraweather.org/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+All programs that were made and open source can be found [here](https://github.com/LoRaWeather) within the LoRaWeather organization on Github.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The project exists of the following contents:
 
-### Markdown
+1. BME280 to LoPy to The Things Network
+2. Data from The Things Network to InfluxDB by MQTT broker
+3. Xamarin application
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### BME280 to LoPy to The Things Network
+Firstly, two researches has been done. One to research what the best hardware is to use for the project and secondly to research what the best way is to send data over the LoRa network.
 
-```markdown
-Syntax highlighted code block
+For the hardware: as a LoRa controller the Pycom LoPy is used. This is a ESP32 based microcontroller with a LoRa chip on top. The microcontroller is programmed in Python. The LoPy was the best choice for the project because it was easy to use, not too expensive and not too big. The BME280 sensor is the best option to use as a sensor. The BME280 is a sensor that reads temperature, humidity and pressure. I2C is used to communicate with the sensor and microcontroller.
 
-# Header 1
-## Header 2
-### Header 3
+LoRa network: The data that is read from the sensor is packed into one object. The object has only a size of 6 bytes. The object contains: Battery status, version, temperature (2 decimals), humidity, pressure (1 decimal). After reading the data the LoPy will try to connect to The Things Network, this is done by OTAA (Over The Air Activation). The Things Network is a community that makes it possible to use the LoRa network for free. Once connected the LoPy will start sending the bytes to The Things Network. Ideally the LoPy should go into deepsleep mode for about one hour, after that it repeats the process.
 
-- Bulleted
-- List
+The program can be found [here](https://github.com/LoRaWeather/BME280-LoPy-TTN) on Github.
 
-1. Numbered
-2. List
+### Data from The Things Network to InfluxDB by MQTT broker
+After
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LoRaWeather/loraweather.org/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Xamarin application
+Lastly,
