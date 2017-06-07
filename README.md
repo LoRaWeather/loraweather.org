@@ -1,14 +1,15 @@
 # Welcome to LoRaWeather!
 LoRaWeather is a project that is created as a graduation assignment. The assignment:
-</br></br>_"Create an open source weather station that sends data over the LoRa network to The Things Network."_</br>
+
+_"Create an open source weather station that sends data over the LoRa network to The Things Network."_
 
 All programs that were made and open source can be found [here](https://github.com/LoRaWeather) within the LoRaWeather organization on Github.
 
 The project exists of the following contents:
 
-1. BME280 to LoPy to The Things Network
-2. Data from The Things Network to InfluxDB by MQTT broker
-3. Xamarin application
+  1. BME280 to LoPy to The Things Network
+  2. Data from The Things Network to InfluxDB by MQTT broker
+  3. Xamarin application
 
 ### BME280 to LoPy to The Things Network
 Firstly, two researches has been done. One to research what the best hardware is to use for the project and secondly to research what the best way is to send data over the LoRa network.
