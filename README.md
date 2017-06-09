@@ -31,6 +31,6 @@ A Xamarin Forms application has been made to show all data that is stored into I
 
 A picture of the app:
 
-![Begin Page](https://user-images.githubusercontent.com/25667411/26977425-1f8be570-4d28-11e7-9b25-f6adc192159a.png)
+<img src="https://user-images.githubusercontent.com/25667411/26977425-1f8be570-4d28-11e7-9b25-f6adc192159a.png" width="250">
 
 The application and other pictures can be found [here](https://github.com/LoRaWeather/loraweather-app) on GitHub.
